@@ -1,7 +1,7 @@
 import os
 
 print("""
-discord weird#1337
+Cazzzzyyyyy
 """)
 
 print("""[1] pip\n[2] pip3\nWhich one do you use?""")
@@ -41,4 +41,4 @@ os.system("npm i cloudflare-bypasser")
 os.system("npm i hcaptcha-solver")
 os.system("ulimit -n 999999")
 os.system("chmod +x *")
-os.system("sudo python3 brown.py")
+os.system("sudo python3 cazzy.py")
