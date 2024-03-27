@@ -26,6 +26,7 @@ elif rn == '2':
     os.system("pip3 install scapy")
     os.system("pip3 install hpack")
     os.system("pip3 install fake-useragent")
+    os.system("pip3 install axios")
 else:
     print("?")
 
