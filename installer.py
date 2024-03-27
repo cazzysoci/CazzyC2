@@ -24,6 +24,8 @@ elif rn == '2':
     os.system("pip3 install threading")
     os.system("pip3 install imcplib")
     os.system("pip3 install scapy")
+    os.system("pip3 install hpack")
+    os.system("pip3 install fake-useragent")
 else:
     print("?")
 
@@ -42,6 +44,7 @@ os.system("npm i hcaptcha-solver")
 os.system("npm i axios")
 os.system("npm i useragents")
 os.system("npm i fake-useragent")
+os.system("npm i hpack")
 os.system("ulimit -n 999999")
 os.system("chmod +x *")
 os.system("sudo python3 cazzy.py")
