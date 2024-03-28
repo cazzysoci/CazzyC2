@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import socket,random,sys,time
  
-proxys = open('proxies.txt').readlines()
+proxys = open('proxy.txt').readlines()
 bots = len(proxys)
  
 if len(sys.argv)==1:
