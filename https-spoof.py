@@ -10,7 +10,7 @@ import sys
 import threading
 from urllib.parse import urlparse
 
-proxys = open('proxies.txt').readlines()
+proxys = open('proxy.txt').readlines()
 bots = len(proxys)
 
 def spoofer():
